@@ -2,7 +2,7 @@ import {FaInstagram, FaGithub, FaFacebook} from "react-icons/fa"
 
 export const Links = () => {
   return (
-    <ul>
+    <ul className="links">
       <a href="#">
         <li><FaInstagram/></li>
       </a>
