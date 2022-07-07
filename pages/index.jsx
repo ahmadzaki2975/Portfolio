@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
-import { Hero } from "./components/Hero";
+import { Hero } from "../components/Hero";
 import { useEffect } from "react";
-import { Links } from "./components/Links";
+import { Links } from "../components/Links";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Home() {
