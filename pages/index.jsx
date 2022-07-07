@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Hero } from "./components/Hero";
 import { useEffect } from "react";
 import { Links } from "./components/Links";
-import { FaInstagram } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Home() {
   // useEffect(() => {
@@ -25,7 +25,7 @@ export default function Home() {
             menu.classList.toggle("active");
           }}
         >
-          <FaInstagram />
+          <GiHamburgerMenu />
         </div>
         <div className="menu">
           <ul>
@@ -49,9 +49,9 @@ export default function Home() {
 
       <Hero />
 
-      <footer>
+      <footer className="dark">
         <Links />
-        <p>&copy; Ahmad Zaki 2022</p>
+        {/* <p>&copy; Ahmad Zaki 2022</p> */}
       </footer>
     </div>
   );

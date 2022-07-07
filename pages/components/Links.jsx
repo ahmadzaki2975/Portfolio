@@ -2,16 +2,16 @@ import {FaInstagram, FaGithub, FaFacebook} from "react-icons/fa"
 
 export const Links = () => {
   return (
-    <ul className="links">
+    <div className="links">
       <a href="#">
-        <li><FaInstagram/></li>
+        <div><FaInstagram/></div>
       </a>
       <a href="#">
-        <li><FaGithub/></li>
+        <div><FaGithub/></div>
       </a>
       <a href="#">
-        <li><FaFacebook/></li>
+        <div><FaFacebook/></div>
       </a>
-    </ul>
+    </div>
   );
 };

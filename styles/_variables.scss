@@ -1,0 +1,14 @@
+$test: rgb(76, 62, 228, 0.5);
+$dark: #15181b;
+$orange: #ff9e0c;
+$orange-light: #ffe4ae;
+
+
+@keyframes glow {
+  from {
+    filter: drop-shadow(0 0 10px  $orange);
+  }
+  to {
+    filter: drop-shadow(0 0 15px  $orange);
+  }
+}
