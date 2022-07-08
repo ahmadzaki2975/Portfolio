@@ -4,6 +4,7 @@ import { Hero } from "../components/Hero";
 import { useEffect } from "react";
 import { Links } from "../components/Links";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Menu } from "../components/Menu";
 
 export default function Home() {
   // useEffect(() => {
@@ -27,20 +28,7 @@ export default function Home() {
         >
           <GiHamburgerMenu />
         </div>
-        <div className="menu">
-          <ul>
-            <Link href="/AboutMe" passHref>
-              <a>
-                <li>About Me</li>
-              </a>
-            </Link>
-            <Link href="/AboutMe" passHref>
-              <a>
-                <li>Projects</li>
-              </a>
-            </Link>
-          </ul>
-        </div>
+        <Menu />
       </div>
       <Head>
         <title>Ahmad Zaki Akmal</title>
@@ -51,7 +39,6 @@ export default function Home() {
 
       <footer className="dark">
         <Links />
-        {/* <p>&copy; Ahmad Zaki 2022</p> */}
       </footer>
     </div>
   );

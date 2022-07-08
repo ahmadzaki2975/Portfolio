@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@500&display=swap");
-@import '_variables.scss';
-
+@import "_variables.scss";
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -80,10 +79,10 @@ a {
   justify-content: center;
   align-items: center;
   a {
-    background: $test;
+    // background: $test;
   }
   a:hover {
-    filter: brightness(150%);
+    color: $orange-light;
   }
 }
 
@@ -97,24 +96,122 @@ a {
     cursor: pointer;
     z-index: 10;
   }
-  .menu {
+}
+.menu {
+  background: $orange;
+  width: 15rem;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 300ms ease;
+  z-index: 7;
+  ul {
     background: $test;
-    width: 15rem;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    transform: translateX(100%);
-    transition: transform 300ms ease;
-    z-index: 7;
-    ul {
-      background: white;
-      margin-top: 5rem;
-      list-style-type: none;
-      padding: 2rem;
-    }
+    margin-top: 5rem;
+    list-style-type: none;
+    padding: 2rem;
   }
-  .active {
-    transform: translateX(0);
+}
+.active {
+  transform: translateX(0);
+}
+
+.navbar {
+  width: 100%;
+  background: $orange;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  .navbar-btn {
+    font-size: 2rem;
+    color: whitesmoke;
+    cursor: pointer;
   }
 }
 
+main {
+  font-family: "Poppins", sans-serif;
+  color: whitesmoke;
+  background: $dark;
+  margin-top: 4rem;
+  padding: 3rem 12.5% 5rem 12.5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .section-title {
+    font-family: "Roboto Slab";
+    margin-bottom: 1rem;
+  }
+  .about {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    .about-image {
+      width: 200px;
+      height: 200px;
+      background: whitesmoke;
+      border-radius: 50%;
+    }
+    .about-text {
+      font-size: 20px;
+      max-width: 400px;
+    }
+  }
+  .icons {
+    // background: $test;
+    margin-top: 5rem;
+    i {
+      font-size: 2rem;
+    }
+  }
+}
+
+.footer {
+  color: $dark;
+  background: $orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-grid {
+  background: $test;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  .project-card {
+    width: 100%;
+    background: white;
+    color: $dark;
+    border-radius: 10px;
+    overflow: hidden;
+    .card-img {
+      width: 100%;
+      height: 150px;
+      background: $orange-light;
+    }
+    .card-text {
+      padding: 1rem;
+      max-width: 250px;
+      p {
+        font-size: 14px;
+        height: 70px;
+        overflow-y: scroll;
+      }
+    }
+  }
+  .card-btn-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+    .btn {
+      padding: 5px 10px;
+      background: $test;
+      border-radius: 5px;
+    }
+  }
+}
