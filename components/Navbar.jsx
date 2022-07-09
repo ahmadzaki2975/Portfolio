@@ -8,7 +8,7 @@ export const Navbar = () => {
       <div className="navbar">
         <Link href="/" passHref>
           <a>
-            <Image src="/Z-Logo-2-min.svg" width={35} height={35} />
+            <Image src="/Z-Logo-2-min.svg" width={35} height={35} alt="Logo"/>
           </a>
         </Link>
         <div

@@ -26,13 +26,13 @@ export default function AboutMe() {
           </div>
         </div>
         <div className="icons">
-        <i class="devicon-html5-plain colored"></i>
-        <i class="devicon-css3-plain colored"></i>
-        <i class="devicon-javascript-plain colored"></i>
+        <i className="devicon-html5-plain colored"></i>
+        <i className="devicon-css3-plain colored"></i>
+        <i className="devicon-javascript-plain colored"></i>
         <br />
-        <i class="devicon-react-plain colored"></i>
-        <i class="devicon-nextjs-plain"></i>
-        <i class="devicon-bootstrap-plain colored"></i>
+        <i className="devicon-react-plain colored"></i>
+        <i className="devicon-nextjs-plain"></i>
+        <i className="devicon-bootstrap-plain colored"></i>
         </div>
       </main>
       <footer>
