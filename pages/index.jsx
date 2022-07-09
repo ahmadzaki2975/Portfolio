@@ -5,19 +5,15 @@ import { useEffect } from "react";
 import { Links } from "../components/Links";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Menu } from "../components/Menu";
+import { motion } from "framer-motion";
 
 export default function Home() {
-  // useEffect(() => {
-  //   const logo = document.querySelector(".hero-image");
-  //   const text = document.querySelector(".hero-text");
-
-  //   setTimeout(() => {
-  //     text.classList.remove("inactive");
-  //   }, 3000);
-  // }, []);
-
   return (
     <div>
+      <Head>
+        <title>Ahmad Zaki Akmal</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="hero-menu">
         <div
           className="menu-btn"
@@ -30,15 +26,22 @@ export default function Home() {
         </div>
         <Menu />
       </div>
-      <Head>
-        <title>Ahmad Zaki Akmal</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       <Hero />
 
       <footer className="dark">
-        <Links />
+      <motion.div initial="hidden" animate="visible" transition={{duration: 1, delay: 2}} variants={{
+          hidden: {
+            opacity: 0,
+            x:-200
+          },
+          visible: {
+            opacity: 1,
+            x:0
+          }
+        }}>
+          <Links />
+        </motion.div>
       </footer>
     </div>
   );

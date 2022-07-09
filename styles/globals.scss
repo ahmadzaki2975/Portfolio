@@ -78,9 +78,6 @@ a {
   filter: brightness(90%);
   justify-content: center;
   align-items: center;
-  a {
-    // background: $test;
-  }
   a:hover {
     color: $orange-light;
   }
@@ -206,7 +203,7 @@ main {
   .card-btn-container {
     margin-top: 1rem;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 0.5rem;
     .btn {
       padding: 5px 10px;

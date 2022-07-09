@@ -217,7 +217,7 @@ main .icons i {
 .projects-grid .card-btn-container {
   margin-top: 1rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 0.5rem;
 }
 .projects-grid .card-btn-container .btn {
