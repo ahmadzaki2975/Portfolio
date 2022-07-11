@@ -3,10 +3,12 @@ import { Navbar } from "../components/Navbar";
 import { Menu } from "../components/Menu";
 import { Footer } from "../components/Footer";
 import {ProjectCard} from "../components/ProjectCard"
-import * as data from "../scripts/projects-data.json"
+import data from "../scripts/projects-data.json"
+import { nanoid } from "nanoid";
 
 export default function Projects() {
   const projects = data.projects;
+  console.log(projects)
   return (
     <>
       <header>
@@ -19,8 +21,11 @@ export default function Projects() {
           {projects.map((project) => {
             return (
             <ProjectCard 
+              key={nanoid()}
               title={project.title}
               desc={project.desc}
+              src={project.src}
+
             />)
           })}
         </div>

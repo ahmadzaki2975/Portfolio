@@ -193,7 +193,12 @@ main {
     .card-img {
       width: 300px;
       height: 100%;
-      background: $orange-light;
+      background: $orange;
+      overflow: hidden;
+      // display: flex;
+      & > * {
+        // transform: rotate(-5deg) scale(200%);
+      }
     }
     .card-text {
       background: white;

@@ -7,8 +7,9 @@ export const ProjectCard = (props) => {
         <Image
           src={`/project-images/${props.src}`}
           alt={props.title}
-          width={100}
-          height={100}
+          width={1360}
+          height={768}
+          layout="responsive"
         />
       </div>
       <div className="card-text">
