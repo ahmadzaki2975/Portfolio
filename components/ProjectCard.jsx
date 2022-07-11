@@ -1,17 +1,26 @@
-export const ProjectCard = () => {
+import Image from "next/image";
+
+export const ProjectCard = (props) => {
   return (
     <div className="project-card">
-      <div className="card-img"></div>
+      <div className="card-img">
+        <Image
+          src={`/project-images/${props.src}`}
+          alt={props.title}
+          width={100}
+          height={100}
+        />
+      </div>
       <div className="card-text">
-        <h2>Project Title</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, id
-          optio. Sed quisquam aperiam tempora harum, obcaecati optio reiciendis
-          cumque?
-        </p>
+        <h2>{props.title}</h2>
+        <p>{props.desc}</p>
         <div className="card-btn-container">
-          <div className="btn">Repository</div>
-          <div className="btn">View</div>
+          <a href={props.repo} className="btn">
+            <div>Repository</div>
+          </a>
+          <a href={props.link} className="btn">
+            <div>View</div>
+          </a>
         </div>
       </div>
     </div>

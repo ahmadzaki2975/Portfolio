@@ -183,21 +183,23 @@ main {
   background: $test;
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   .project-card {
-    width: 100%;
-    background: white;
+    background: $test;
     color: $dark;
     border-radius: 10px;
     overflow: hidden;
+    display: flex;
     .card-img {
-      width: 100%;
-      height: 150px;
+      width: 300px;
+      height: 100%;
       background: $orange-light;
     }
     .card-text {
+      background: white;
       padding: 1rem;
       max-width: 250px;
+      width: 100%;
       p {
         font-size: 14px;
         height: 70px;
@@ -208,12 +210,13 @@ main {
   .card-btn-container {
     margin-top: 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 0.5rem;
     .btn {
       padding: 5px 10px;
       background: $test;
       border-radius: 5px;
+      cursor: pointer;
     }
   }
 }

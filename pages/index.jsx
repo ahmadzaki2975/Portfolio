@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Hero } from "../components/Hero";
 import { useEffect } from "react";
@@ -10,10 +9,6 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Ahmad Zaki Akmal</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div className="hero-menu">
         <div
           className="menu-btn"
