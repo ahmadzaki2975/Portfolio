@@ -3,7 +3,9 @@
     {
       "title":"Online Shop Web",
       "desc":"A simple online shopping website made using ReactJS and Firebase",
-      "src":"OnlineShopWeb.jpg"
+      "src":"OnlineShopWeb.jpg",
+      "link":"https://online-shop-app-ahmadzaki2975.vercel.app",
+      "repo":"https://github.com/ahmadzaki2975/OnlineShopApp"
     },
     {
       "title":"test"

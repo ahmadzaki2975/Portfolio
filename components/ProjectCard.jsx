@@ -16,10 +16,10 @@ export const ProjectCard = (props) => {
         <h2>{props.title}</h2>
         <p>{props.desc}</p>
         <div className="card-btn-container">
-          <a href={props.repo} className="btn">
+          <a href={props.repo} className="btn repo">
             <div>Repository</div>
           </a>
-          <a href={props.link} className="btn">
+          <a href={props.link} className="btn view">
             <div>View</div>
           </a>
         </div>

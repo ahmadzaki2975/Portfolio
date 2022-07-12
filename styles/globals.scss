@@ -185,6 +185,10 @@ main {
   gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
   .project-card {
+    ::-webkit-scrollbar {
+      width: 4px;
+      background: #77797b;
+    }
     background: $test;
     color: $dark;
     border-radius: 10px;
@@ -195,9 +199,8 @@ main {
       height: 100%;
       background: $orange;
       overflow: hidden;
-      // display: flex;
       & > * {
-        // transform: rotate(-5deg) scale(200%);
+        transform: scale(160%);
       }
     }
     .card-text {
@@ -222,6 +225,13 @@ main {
       background: $test;
       border-radius: 5px;
       cursor: pointer;
+      color: white;
+    }
+    .view {
+      background: $orange;
+    }
+    .repo {
+      background: $dark;
     }
   }
 }

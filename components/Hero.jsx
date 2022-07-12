@@ -17,7 +17,7 @@ export const Hero = () => {
           }
         }}>
           <h1>Ahmad Zaki Akmal</h1>
-          <p>Lorem Ipsum</p>
+          <p>Front End Web Developer</p>
         </motion.div>
       </div>
       <div className="hero-image">

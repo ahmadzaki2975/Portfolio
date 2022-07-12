@@ -203,11 +203,18 @@ main .icons i {
   overflow: hidden;
   display: flex;
 }
+.projects-grid .project-card ::-webkit-scrollbar {
+  width: 4px;
+  background: #77797b;
+}
 .projects-grid .project-card .card-img {
   width: 300px;
   height: 100%;
   background: #ff9e0c;
   overflow: hidden;
+}
+.projects-grid .project-card .card-img > * {
+  transform: scale(160%);
 }
 .projects-grid .project-card .card-text {
   background: white;
@@ -231,4 +238,11 @@ main .icons i {
   background: rgba(76, 62, 228, 0.5);
   border-radius: 5px;
   cursor: pointer;
+  color: white;
+}
+.projects-grid .card-btn-container .view {
+  background: #ff9e0c;
+}
+.projects-grid .card-btn-container .repo {
+  background: #15181b;
 }/*# sourceMappingURL=globals.css.map */
