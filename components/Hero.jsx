@@ -18,10 +18,17 @@ export const Hero = () => {
         }}>
           <h1>Ahmad Zaki Akmal</h1>
           <p>Front End Web Developer</p>
+          <div className="btn-container">
+            <a href="#">
+              <div className="btn">About Me</div>
+            </a>
+            <a href="#">
+              <div className="btn">Projects</div>
+            </a>
+          </div>
         </motion.div>
       </div>
-      <div className="hero-image">
-      <motion.div initial="hidden" animate="visible" transition={{duration: 1}} variants={{
+      <motion.div className="hero-image"  initial="hidden" animate="visible" transition={{duration: 1}} variants={{
           hidden: {
             opacity: 0,
             x:-400
@@ -33,7 +40,6 @@ export const Hero = () => {
         }}>
           <Logo/>
         </motion.div>
-      </div>
     </div>
   );
 };
