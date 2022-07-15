@@ -82,13 +82,14 @@ a {
 .hero .hero-text .btn-container .btn {
   padding: 5px 10px;
   cursor: pointer;
-  box-shadow: 0 0 20px 4px #ff9e0c;
-  background: linear-gradient(60deg, #ffe4ae, #ff9e0c, #ffe4ae);
-  color: #15181b;
-  transition: box-shadow 200ms ease;
+  box-shadow: 0 0 0 5px #ff9e0c, 0 0 10px 6px #ff9e0c;
+  color: white;
+  transition: all 200ms ease;
 }
 .hero .hero-text .btn-container .btn:hover {
-  box-shadow: 0 0 20px 7px #ff9e0c;
+  box-shadow: 0 0 0 5px #ff9e0c, 0 0 10px 8px #ff9e0c;
+  background: #ff9e0c;
+  color: #15181b;
 }
 .hero .hero-image {
   padding: 2rem;
@@ -145,7 +146,7 @@ a {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  box-shadow: 0 4px 10px #ff9e0c;
+  box-shadow: 0 4px 10px #ff9e0c, 0 1px 10px #ffe4ae;
 }
 .navbar .navbar-btn {
   font-size: 2rem;
@@ -154,6 +155,7 @@ a {
 }
 
 .menu {
+  font-size: 1.2rem;
   background: #ff9e0c;
   width: 15rem;
   height: 100vh;
@@ -186,8 +188,9 @@ main {
 }
 main .section-title {
   font-family: "Roboto Slab";
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
   border-bottom: #ff9e0c 1px solid;
+  font-size: 2rem;
 }
 main .about {
   display: flex;
@@ -196,12 +199,15 @@ main .about {
 }
 main .about .about-image {
   width: 200px;
-  height: 200px;
+  aspect-ratio: 1;
   background: whitesmoke;
   border-radius: 50%;
+  background-image: url(/Zaki2022.jpg);
+  background-position: center;
+  background-size: cover;
 }
 main .about .about-text {
-  font-size: 20px;
+  font-size: 1.1rem;
   max-width: 400px;
 }
 main .icons {
@@ -276,6 +282,19 @@ main .icons i {
   background: #15181b;
 }
 
+@media screen and (max-width: 830px) {
+  main .about {
+    flex-direction: column;
+  }
+  main .about .about-text {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 300px;
+  }
+  main .about .about-image {
+    width: 175px;
+  }
+}
 @media screen and (max-width: 768px) {
   :root {
     font-size: 13px;
