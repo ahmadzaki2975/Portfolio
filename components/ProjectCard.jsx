@@ -4,6 +4,7 @@ export const ProjectCard = (props) => {
   return (
     <div className="project-card">
       <div className="card-img">
+        <div className="img-box">
         <Image
           src={`/project-images/${props.src}`}
           alt={props.title}
@@ -11,6 +12,7 @@ export const ProjectCard = (props) => {
           height={768}
           layout="responsive"
         />
+        </div>
       </div>
       <div className="card-text">
         <h2>{props.title}</h2>
