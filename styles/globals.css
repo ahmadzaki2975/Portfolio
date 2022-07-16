@@ -119,12 +119,12 @@ a {
   display: flex;
   font-size: 2rem;
   gap: 1rem;
-  filter: brightness(90%);
   justify-content: center;
   align-items: center;
+  color: rgba(255, 255, 255, 0.7);
 }
 .links a:hover {
-  color: #ffe4ae;
+  color: white;
 }
 
 .hero-menu .menu-btn {
