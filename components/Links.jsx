@@ -1,4 +1,5 @@
-import {FaInstagram, FaGithub, FaFacebook, FaLinkedin} from "react-icons/fa"
+import {FaInstagram, FaGithub, FaFacebook, FaLinkedin} from "react-icons/fa";
+import {MdMail} from "react-icons/md";
 
 export const Links = () => {
   return (
@@ -14,6 +15,9 @@ export const Links = () => {
       </a>
       <a href="https://www.linkedin.com/in/ahmad-zaki-akmal/">
         <div><FaLinkedin/></div>
+      </a>
+      <a href="mailto:ahmadzaki2975@gmail.com">
+        <div><MdMail/></div>
       </a>
     </div>
   );

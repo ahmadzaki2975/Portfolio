@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Slab:wght@500&display=swap");
 @-webkit-keyframes glow {
   from {
-    filter: drop-shadow(0 0 10px #ff9e0c);
+    filter: drop-shadow(0 0 10px #ec9005);
     transform: translateY(0);
   }
   to {
-    filter: drop-shadow(0 0 15px #ff9e0c);
+    filter: drop-shadow(0 0 15px #ec9005);
     transform: translateY(0.5rem);
   }
 }
 @keyframes glow {
   from {
-    filter: drop-shadow(0 0 10px #ff9e0c);
+    filter: drop-shadow(0 0 10px #ec9005);
     transform: translateY(0);
   }
   to {
-    filter: drop-shadow(0 0 15px #ff9e0c);
+    filter: drop-shadow(0 0 15px #ec9005);
     transform: translateY(0.5rem);
   }
 }
@@ -82,13 +82,13 @@ a {
 .hero .hero-text .btn-container .btn {
   padding: 5px 10px;
   cursor: pointer;
-  box-shadow: 0 0 0 5px #ff9e0c, 0 0 10px 6px #ff9e0c;
+  box-shadow: 0 0 0 5px #ec9005, 0 0 10px 6px #ec9005;
   color: white;
   transition: all 200ms ease;
 }
 .hero .hero-text .btn-container .btn:hover {
-  box-shadow: 0 0 0 5px #ff9e0c, 0 0 10px 8px #ff9e0c;
-  background: #ff9e0c;
+  box-shadow: 0 0 0 5px #ec9005, 0 0 10px 8px #ec9005;
+  background: #ec9005;
   color: #15181b;
 }
 .hero .hero-image {
@@ -108,13 +108,12 @@ a {
 }
 .hero .hero-image svg .top,
 .hero .hero-image svg .bottom {
-  fill: #ff9e0c;
+  fill: #ec9005;
 }
 
 .links {
   height: 10vh;
-  padding: 0;
-  margin: 0;
+  margin-top: 20px;
   list-style-type: none;
   display: flex;
   font-size: 2rem;
@@ -147,7 +146,7 @@ a {
   position: fixed;
   top: 0;
   z-index: 10;
-  box-shadow: 0 4px 10px #ff9e0c, 0 1px 10px #ffe4ae;
+  box-shadow: 0 4px 10px #ec9005, 0 1px 10px #ffe4ae;
 }
 .navbar .navbar-btn {
   font-size: 2rem;
@@ -157,8 +156,7 @@ a {
 
 .menu {
   font-size: 1.2rem;
-  background: #ff9e0c;
-  width: 15rem;
+  background: #ec9005;
   height: 100vh;
   position: fixed;
   top: 5rem;
@@ -166,11 +164,37 @@ a {
   transform: translateX(100%);
   transition: transform 300ms ease;
   z-index: 7;
-  padding: 1.5rem;
+  padding: 20px 40px 20px 20px;
+  overflow: hidden;
+}
+.menu::after {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  bottom: -40%;
+  content: "";
+  background: #ec6105;
+  transform: rotate(30deg);
+  opacity: 0.5;
 }
 .menu ul {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   list-style-type: none;
-  padding: 2rem;
+  padding: 30px 20px;
+}
+.menu ul a::after {
+  transition: width 200ms ease;
+  display: block;
+  content: "";
+  background: #ffe4ae;
+  width: 0;
+  height: 4px;
+  margin-bottom: 10px;
+}
+.menu ul a:hover::after {
+  width: 100%;
 }
 
 .active {
@@ -186,11 +210,12 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 main .section-title {
   font-family: "Roboto Slab";
   margin-bottom: 20px;
-  border-bottom: #ff9e0c 1px solid;
+  border-bottom: #ec9005 1px solid;
   font-size: 2rem;
 }
 main .about {
@@ -212,11 +237,11 @@ main .about .about-text {
   max-width: 400px;
 }
 main .icons {
-  margin-top: 5rem;
-  margin-bottom: 100px;
+  margin-top: 70px;
 }
 main .icons i {
   font-size: 2rem;
+  margin: 5px;
 }
 
 .footer {
@@ -225,16 +250,25 @@ main .icons i {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5px;
 }
 
 .projects-grid {
-  background: rgba(76, 62, 228, 0.5);
+  margin-top: 50px;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
 }
+.projects-grid .placeholder-card {
+  width: 100%;
+  padding: 50px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  border: #77797b dashed 5px;
+  color: #77797b;
+}
 .projects-grid .project-card {
-  background: rgba(76, 62, 228, 0.5);
   color: #15181b;
   border-radius: 10px;
   overflow: hidden;
@@ -276,16 +310,21 @@ main .icons i {
 }
 .projects-grid .card-btn-container .btn {
   padding: 5px 10px;
-  background: rgba(76, 62, 228, 0.5);
   border-radius: 5px;
   cursor: pointer;
   color: white;
 }
 .projects-grid .card-btn-container .view {
-  background: #ff9e0c;
+  background: #ec9005;
 }
 .projects-grid .card-btn-container .repo {
   background: #15181b;
+}
+
+.projects-text {
+  max-width: 400px;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 830px) {

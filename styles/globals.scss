@@ -39,7 +39,6 @@ a {
     visibility: hidden;
   }
   .hero-text {
-    // background: $test;
     width: max-content;
     padding: 2rem;
     padding-right: 0;
@@ -102,8 +101,7 @@ a {
 
 .links {
   height: 10vh;
-  padding: 0;
-  margin: 0;
+  margin-top: 20px;
   list-style-type: none;
   display: flex;
   font-size: 2rem;
@@ -150,7 +148,6 @@ a {
 .menu {
   font-size: 1.2rem;
   background: $orange;
-  width: 15rem;
   height: 100vh;
   position: fixed;
   top: 5rem;
@@ -158,10 +155,38 @@ a {
   transform: translateX(100%);
   transition: transform 300ms ease;
   z-index: 7;
-  padding: 1.5rem;
+  padding: 20px 40px 20px 20px;
+  overflow: hidden;
+  &::after {
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    bottom: -40%;
+    content: '';
+    background: $orange-dark;
+    transform: rotate(30deg);
+    opacity: .5;
+  }
   ul {
+    width: max-content;
     list-style-type: none;
-    padding: 2rem;
+    padding: 30px 20px;
+    a {
+      &::after {
+        transition: width 200ms ease;
+        display: block;
+        content: '';
+        background: $orange-light;
+        width: 0;
+        height: 4px;
+        margin-bottom: 10px;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 .active {
@@ -177,6 +202,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
   .section-title {
     font-family: "Roboto Slab";
     margin-bottom: 20px;
@@ -202,11 +228,10 @@ main {
     }
   }
   .icons {
-    // background: $test;
-    margin-top: 5rem;
-    margin-bottom: 100px;
+    margin-top: 70px;
     i {
       font-size: 2rem;
+      margin: 5px;
     }
   }
 }
@@ -217,19 +242,28 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5px;
 }
 
 .projects-grid {
-  background: $test;
+  margin-top: 50px;
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
+  .placeholder-card{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: #77797b dashed 5px;
+    color: #77797b;
+  }
   .project-card {
     ::-webkit-scrollbar {
       width: 4px;
       background: #77797b;
     }
-    background: $test;
     color: $dark;
     border-radius: 10px;
     overflow: hidden;
@@ -266,7 +300,6 @@ main {
     gap: 0.5rem;
     .btn {
       padding: 5px 10px;
-      background: $test;
       border-radius: 5px;
       cursor: pointer;
       color: white;
@@ -278,6 +311,12 @@ main {
       background: $dark;
     }
   }
+}
+
+.projects-text {
+  max-width: 400px;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 @media screen and (max-width: 830px) {

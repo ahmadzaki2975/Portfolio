@@ -5,6 +5,7 @@ import { ProjectCard } from "../components/ProjectCard";
 import data from "../scripts/projects-data.json";
 import { nanoid } from "nanoid";
 import { motion } from "framer-motion";
+import { FaTools } from "react-icons/fa";
 
 export default function Projects() {
   const projects = data.projects;
@@ -17,10 +18,13 @@ export default function Projects() {
       </header>
       <main>
         <h1 className="section-title">Projects</h1>
+        <p className="projects-text">
+          Any personal or group projects that I contributed to is listed here.
+        </p>
         <motion.div
           initial="hidden"
           animate="visible"
-          transition={{ duration: 1, staggerChildren:.5}}
+          transition={{ duration: 1, staggerChildren: 0.5 }}
           variants={{
             hidden: {
               opacity: 0,
@@ -29,7 +33,7 @@ export default function Projects() {
             visible: {
               opacity: 1,
               x: 0,
-            }
+            },
           }}
           className="projects-grid"
         >
@@ -45,6 +49,9 @@ export default function Projects() {
               />
             );
           })}
+          <div className="placeholder-card">
+            <FaTools /> More Projects Coming Soon
+          </div>
         </motion.div>
       </main>
       <footer>
