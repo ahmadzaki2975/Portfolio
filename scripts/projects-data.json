@@ -2,10 +2,16 @@
   "projects":[
     {
       "title":"Online Shop Web",
-      "desc":"A simple online shopping website made using ReactJS and Firebase",
+      "desc":"A simple online shopping website made using ReactJS, SCSS, and Firebase for database.",
       "src":"OnlineShopWeb.jpg",
       "link":"https://online-shop-app-ahmadzaki2975.vercel.app",
       "repo":"https://github.com/ahmadzaki2975/OnlineShopApp"
+    }, {
+      "title":"To Do List Web",
+      "desc":"Simple task list web made using ReactJS and Bootstrap. This web uses local storage.",
+      "src":"ToDoList.jpg",
+      "link":"https://to-do-list-dun-beta.vercel.app",
+      "repo":"https://github.com/ahmadzaki2975/To-Do-List-App"
     }
   ]
 }
