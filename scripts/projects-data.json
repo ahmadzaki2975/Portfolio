@@ -1,6 +1,13 @@
 {
   "projects":[
     {
+      "title":"Weather Website",
+      "desc":"Website to view the weather of the user's location. Made using ReactJS, TailwindCSS, and Axios. Data provided by BMKG Indonesia, public API by ibnux (github)",
+      "src":"WeatherWeb.jpg",
+      "link":"https://weather-web-six.vercel.app",
+      "repo":"https://github.com/ahmadzaki2975/Weather-Web"
+    },
+    {
       "title":"Online Shop Web",
       "desc":"A simple online shopping website made using ReactJS, SCSS, and Firebase for database.",
       "src":"OnlineShopWeb.jpg",
