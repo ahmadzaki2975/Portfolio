@@ -1,6 +1,20 @@
 {
   "projects":[
     {
+      "title":"Anime Ingfo",
+      "desc":"Website to view anime details and details. Made using Typescript, NextJS, and Tailwindcss.",
+      "src":"AnimeIngfo.jpg",
+      "link":"https://anime-ingfo.vercel.app",
+      "repo":"https://github.com/ahmadzaki2975/Anime-Ingfo"
+    },
+    {
+      "title":"Hamagon",
+      "desc":"Group project made for DTETI Summer School Hackathon. An AI based web app to check plant's health. Front end made using NextJS and Tailwindcss, back end made using Python Flask.",
+      "src":"Hamagon.jpg",
+      "link":"https://hamagon.vercel.app",
+      "repo":"https://github.com/ahmadzaki2975/Hamagon"
+    },
+    {
       "title":"Weather Website",
       "desc":"Website to view the weather of the user's location. Made using ReactJS, TailwindCSS, and Axios. Data provided by BMKG Indonesia, public API by ibnux (github)",
       "src":"WeatherWeb.jpg",
