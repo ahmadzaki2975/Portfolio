@@ -9,7 +9,7 @@
     },
     {
       "title":"Money Manager",
-      "desc":"Website to help manage spendings and gains. Made using NextJS and Firestore DB.",
+      "desc":"Website to help manage spendings and gains. Made using NextJS and Firestore DB. This is a collaboration work with my high school friend Glorious Satria.",
       "src":"Money-Manager.jpg",
       "link":"https://money-manager-bp7dzb37t-ahmadzaki2975.vercel.app",
       "repo":"https://github.com/ahmadzaki2975/Money-Manager"

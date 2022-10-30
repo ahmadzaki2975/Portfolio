@@ -302,9 +302,10 @@ main .icons i {
 .projects-grid .project-card .card-text p {
   max-width: 350px;
   width: 100%;
-  font-size: 14px;
-  height: 70px;
-  overflow-y: scroll;
+  font-size: 16px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .projects-grid .card-btn-container {
   margin-top: 1rem;
