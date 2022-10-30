@@ -23,7 +23,7 @@ export const Hero = () => {
           }}
         >
           <h1>Ahmad Zaki Akmal</h1>
-          <p>Front End Web Developer</p>
+          <p>Website Enthusiast</p>
           <div className="btn-container">
             <Link href="/AboutMe" passHref>
               <a href="#">
