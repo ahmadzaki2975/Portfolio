@@ -1,8 +1,22 @@
 {
   "projects":[
     {
+      "title":"DTETI Open House",
+      "desc":"Website built for DTETI UGM Open House 2022, made by the IT Team using NextJS, Tailwindcss, and Firebase.",
+      "src":"DTETIOH.jpg",
+      "link":"https://openhousedteti.com",
+      "repo":"https://github.com/aufarhmn/web-open-house"
+    },
+    {
+      "title":"Money Manager",
+      "desc":"Website to help manage spendings and gains. Made using NextJS and Firestore DB.",
+      "src":"Money-Manager.jpg",
+      "link":"https://money-manager-bp7dzb37t-ahmadzaki2975.vercel.app",
+      "repo":"https://github.com/ahmadzaki2975/Money-Manager"
+    },
+    {
       "title":"Anime Ingfo",
-      "desc":"Website to view anime details and details. Made using Typescript, NextJS, and Tailwindcss.",
+      "desc":"Website to view anime details and updates. Made using Typescript, NextJS, and Tailwindcss.",
       "src":"AnimeIngfo.jpg",
       "link":"https://anime-ingfo.vercel.app",
       "repo":"https://github.com/ahmadzaki2975/Anime-Ingfo"

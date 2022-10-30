@@ -3,7 +3,7 @@ import Image from "next/image";
 export const ProjectCard = (props) => {
   return (
     <div className="project-card">
-      <div className="card-img">
+      <div className="card-img bg-white">
         <div className="img-box">
         <Image
           src={`/project-images/${props.src}`}
