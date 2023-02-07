@@ -39,9 +39,9 @@ export default function AboutMe() {
             <i className="devicon-react-plain colored"></i>
             <i className="devicon-nextjs-plain"></i>
             <i className="devicon-tailwindcss-plain colored"></i>
-            <i class="devicon-express-original original"></i>
-            <i class="devicon-firebase-plain colored"></i>
-            <i class="devicon-mongodb-plain colored"></i>
+            <i className="devicon-express-original original"></i>
+            <i className="devicon-firebase-plain colored"></i>
+            <i className="devicon-mongodb-plain colored"></i>
           </div>
         </div>
         <div className="experience">
