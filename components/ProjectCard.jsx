@@ -5,23 +5,20 @@ export const ProjectCard = (props) => {
     <div className="project-card">
       <div className="card-img bg-white">
         <div className="img-box">
-        <Image
-          src={`/project-images/${props.src}`}
-          alt={props.title}
-          width={1360}
-          height={768}
-          layout="responsive"
-        />
+          <img
+            src={`/project-images/${props.src}`}
+            alt={props.title}
+          />
         </div>
       </div>
       <div className="card-text">
         <h2>{props.title}</h2>
-        <p>{props.desc}</p>
+        <p style={{textAlign: "center"}}>{props.desc}</p>
         <div className="card-btn-container">
-          <a href={props.repo} className="btn repo">
+          <a href={props.repo} className="btn repo" target="_blank">
             <div>Repository</div>
           </a>
-          <a href={props.link} className="btn view">
+          <a href={props.link} className="btn view" target="_blank">
             <div>View</div>
           </a>
         </div>
