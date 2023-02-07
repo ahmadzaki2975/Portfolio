@@ -244,8 +244,18 @@ main .icons {
   margin-top: 20px;
 }
 main .icons i {
-  font-size: 2rem;
-  margin: 5px;
+  font-size: 3rem;
+  margin: 10px;
+}
+
+.icons h1 {
+  margin-bottom: 10px;
+}
+
+.icons .icons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .3rem;
 }
 
 .footer {
@@ -272,6 +282,11 @@ main .icons i {
   border-radius: 10px;
   border: #77797b dashed 5px;
   color: #77797b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .projects-grid .project-card {
   color: #15181b;
@@ -279,6 +294,7 @@ main .icons i {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: #ec9005 0 0 10px;
 }
 .projects-grid .project-card ::-webkit-scrollbar {
   width: 4px;
@@ -292,9 +308,17 @@ main .icons i {
   align-items: center;
 }
 .projects-grid .project-card .card-img .img-box {
-  display: block;
+  display:grid;
+  place-items: center;
   width: 100%;
-  transform: scale(110%);
+  height: 256px;
+  position: relative;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 .projects-grid .project-card .card-text {
   background: white;
@@ -347,11 +371,21 @@ main .icons i {
 .experience .experience-item {
   outline: white 1px solid;
   border-radius: 10px;
-  padding: 10px;
+  padding: 20px;
 }
 .experience .experience-item .experience-desc {
   max-width: 400px;
   font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.experience-title {
+  color: #ec9005;
+}
+
+.experience-period {
+  opacity: 0.8;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 830px) {
@@ -415,7 +449,8 @@ main .icons i {
     text-align: center;
   }
   .projects-grid .project-card .card-img {
-    width: 400px;
+    /* width: 400px; */
+    height: 200px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -429,3 +464,4 @@ main .icons i {
     width: 100px;
   }
 }/*# sourceMappingURL=globals.css.map */
+
