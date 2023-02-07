@@ -22,8 +22,11 @@ export const Hero = () => {
             },
           }}
         >
-          <h1>Ahmad Zaki Akmal</h1>
-          <p>Website Enthusiast</p>
+          <h1>Ahmad <span style={{color:"#ec9005"}}>Zaki</span> Akmal</h1>
+          <p style={{textAlign:"center", marginTop: "5px"}}>
+            Information Engineering Student <br />
+            Web Developer
+          </p>
           <div className="btn-container">
             <Link href="/AboutMe" passHref>
               <a href="#">
