@@ -2,7 +2,7 @@ import { Navbar } from "../components/Navbar";
 import Head from "next/head";
 import { Footer } from "../components/Footer";
 import { Menu } from "../components/Menu";
-import { ExperienceItem } from "../components/Experience-item";
+import { ExperienceItem } from "../components/ExperienceItem";
 
 export default function AboutMe() {
   return (
@@ -25,21 +25,23 @@ export default function AboutMe() {
             <h2>Ahmad Zaki Akmal</h2>
             <p>
               Undergraduate Information Engineering student in Gadjah Mada
-              University. Currently learning front end web development, and
-              planning to be a fullstack web developer.
+              University. I have great interest in software development, especially
+              web development.
             </p>
           </div>
         </div>
         <div className="icons">
           <h1>Tech Stack</h1>
-          <div>
+          <div className="icons-grid">
             <i className="devicon-html5-plain colored"></i>
             <i className="devicon-css3-plain colored"></i>
             <i className="devicon-javascript-plain colored"></i>
-            <br />
             <i className="devicon-react-plain colored"></i>
             <i className="devicon-nextjs-plain"></i>
             <i className="devicon-tailwindcss-plain colored"></i>
+            <i class="devicon-express-original original"></i>
+            <i class="devicon-firebase-plain colored"></i>
+            <i class="devicon-mongodb-plain colored"></i>
           </div>
         </div>
         <div className="experience">
@@ -48,19 +50,19 @@ export default function AboutMe() {
             title="Web Developer"
             company="FindIT! UGM"
             date="Oct 2022 - Present"
-            description="Developing and maintaining FindIT! UGM website. FindIT! UGM is an event held by DTETI UGM about Information Technology."
+            description="I lead the front end team work on the main website of FindIT! UGM 2023."
           />
           <ExperienceItem
             title="Web Developer"
             company="Technocorner UGM"
             date="Oct 2022 - Present"
-            description="Technocorner is an event held by DTETI UGM, similar to FindIT. However, Technocorner focuses more on general tech like electrical engineering."
+            description="I worked both on the front end and back end of Technocorner UGM website, but mostly on the front end side."
           />
           <ExperienceItem
-            title="Staff of IT Division"
+            title="IT Division Staff"
             company="DTETI UGM Open House"
-            date="Jul 2022 - Present"
-            description="DTETI Open House is an event held to promote Department of Electrical Engineering and Information Technology to public."
+            date="Jul 2022 - Nov 2022"
+            description="DTETI Open House is an event held to promote Department of Electrical Engineering and Information Technology to public. I help the IT Division to maintain the website and stream the event."
           />
         </div>
       </main>
