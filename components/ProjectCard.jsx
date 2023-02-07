@@ -5,9 +5,10 @@ export const ProjectCard = (props) => {
     <div className="project-card">
       <div className="card-img bg-white">
         <div className="img-box">
-          <img
+          <Image
             src={`/project-images/${props.src}`}
             alt={props.title}
+            layout="fill"
           />
         </div>
       </div>
@@ -15,10 +16,10 @@ export const ProjectCard = (props) => {
         <h2>{props.title}</h2>
         <p style={{textAlign: "center"}}>{props.desc}</p>
         <div className="card-btn-container">
-          <a href={props.repo} className="btn repo" target="_blank">
+          <a href={props.repo} className="btn repo" target="_blank" rel="noopener noreferrer">
             <div>Repository</div>
           </a>
-          <a href={props.link} className="btn view" target="_blank">
+          <a href={props.link} className="btn view" target="_blank" rel="noopener noreferrer">
             <div>View</div>
           </a>
         </div>
