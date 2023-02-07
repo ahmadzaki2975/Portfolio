@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div>
-      <div className="hero-menu">
+      {/* <div className="hero-menu">
         <div
           className="menu-btn"
           onClick={() => {
@@ -20,7 +20,7 @@ export default function Home() {
           <GiHamburgerMenu />
         </div>
         <Menu />
-      </div>
+      </div> */}
 
       <Hero />
 
