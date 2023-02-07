@@ -1,6 +1,13 @@
 {
   "projects":[
     {
+      "title": "Night Login Profile Web",
+      "desc": "Website I built in NL's Profile Web Contest and won 3rd place. Made using TailwindCSS and NextJS.",
+      "src": "NL-Web.jpg",
+      "link": "https://web-night-login.vercel.app",
+      "repo": "https://github.com/ahmadzaki2975/Web-Night-Login"
+    },
+    {
       "title":"DTETI Open House",
       "desc":"Website built for DTETI UGM Open House 2022, made by the IT Team using NextJS, Tailwindcss, and Firebase.",
       "src":"DTETIOH.jpg",
@@ -9,44 +16,10 @@
     },
     {
       "title":"Money Manager",
-      "desc":"Website to help manage spendings and gains. Made using NextJS and Firestore DB. This is a collaboration work with my high school friend Glorious Satria.",
+      "desc":"Website to help manage spendings and gains. Made using NextJS and Firestore DB. This is a collaboration work with a friend.",
       "src":"Money-Manager.jpg",
       "link":"https://money-manager-bp7dzb37t-ahmadzaki2975.vercel.app",
       "repo":"https://github.com/ahmadzaki2975/Money-Manager"
-    },
-    {
-      "title":"Anime Ingfo",
-      "desc":"Website to view anime details and updates. Made using Typescript, NextJS, and Tailwindcss.",
-      "src":"AnimeIngfo.jpg",
-      "link":"https://anime-ingfo.vercel.app",
-      "repo":"https://github.com/ahmadzaki2975/Anime-Ingfo"
-    },
-    {
-      "title":"Hamagon",
-      "desc":"Group project made for DTETI Summer School Hackathon. An AI based web app to check plant's health. Front end made using NextJS and Tailwindcss, back end made using Python Flask.",
-      "src":"Hamagon.jpg",
-      "link":"https://hamagon.vercel.app",
-      "repo":"https://github.com/ahmadzaki2975/Hamagon"
-    },
-    {
-      "title":"Weather Website",
-      "desc":"Website to view the weather of the user's location. Made using ReactJS, TailwindCSS, and Axios. Data provided by BMKG Indonesia, public API by ibnux (github)",
-      "src":"WeatherWeb.jpg",
-      "link":"https://weather-web-six.vercel.app",
-      "repo":"https://github.com/ahmadzaki2975/Weather-Web"
-    },
-    {
-      "title":"Online Shop Web",
-      "desc":"A simple online shopping website made using ReactJS, SCSS, and Firebase for database.",
-      "src":"OnlineShopWeb.jpg",
-      "link":"https://online-shop-app-ahmadzaki2975.vercel.app",
-      "repo":"https://github.com/ahmadzaki2975/OnlineShopApp"
-    }, {
-      "title":"To Do List Web",
-      "desc":"Simple task list web made using ReactJS and Bootstrap. This web uses local storage.",
-      "src":"ToDoList.jpg",
-      "link":"https://to-do-list-dun-beta.vercel.app",
-      "repo":"https://github.com/ahmadzaki2975/To-Do-List-App"
     }
   ]
 }
