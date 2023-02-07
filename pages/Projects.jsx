@@ -9,7 +9,7 @@ import { FaTools } from "react-icons/fa";
 
 export default function Projects() {
   const projects = data.projects;
-  console.log(projects);
+  // console.log(projects);
   return (
     <>
       <header>
@@ -24,17 +24,6 @@ export default function Projects() {
         <motion.div
           initial="hidden"
           animate="visible"
-          transition={{ duration: 1, staggerChildren: 0.5 }}
-          variants={{
-            hidden: {
-              opacity: 0,
-              x: -400,
-            },
-            visible: {
-              opacity: 1,
-              x: 0,
-            },
-          }}
           className="projects-grid"
         >
           {projects.map((project) => {
@@ -50,7 +39,7 @@ export default function Projects() {
             );
           })}
           <div className="placeholder-card">
-            <FaTools /> More Projects Coming Soon
+            <FaTools style={{fontSize: "3rem"}} /> More Projects Coming Soon
           </div>
         </motion.div>
       </main>
