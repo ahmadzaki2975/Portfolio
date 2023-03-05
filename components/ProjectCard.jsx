@@ -14,12 +14,28 @@ export const ProjectCard = (props) => {
       </div>
       <div className="card-text">
         <h2>{props.title}</h2>
-        <p style={{textAlign: "center"}}>{props.desc}</p>
+        <p style={{ textAlign: "center" }}>{props.desc}</p>
         <div className="card-btn-container">
-          <a href={props.repo} className="btn repo" target="_blank" rel="noopener noreferrer">
-            <div>Repository</div>
-          </a>
-          <a href={props.link} className="btn view" target="_blank" rel="noopener noreferrer">
+          {props.repo ? (
+            <a
+              href={props.repo}
+              className="btn repo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>Repository</div>
+            </a>
+          ) : (
+            <div className="btn repo" style={{opacity: .7, cursor: "not-allowed"}} >
+              <div>Private Repository</div>
+            </div>
+          )}
+          <a
+            href={props.link}
+            className="btn view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div>View</div>
           </a>
         </div>
