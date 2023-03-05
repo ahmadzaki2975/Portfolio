@@ -1,6 +1,20 @@
 {
   "projects":[
     {
+      "title": "Technocorner 2023",
+      "desc": "Technocorner is an annual event held by KMTETI FT UGM. This is the website for Technocorner 2023, made using MERN tech stack. I contributed to both the front end and the back end of this website, but mostly on the front end part.",
+      "src": "Technocorner.jpg",
+      "link": "https://technocorner.id",
+      "repo": ""
+    },
+    {
+      "title": "Find IT! 2023",
+      "desc": "Find IT UGM is an annual event held by KMTETI FT UGM. This is the website for Find IT UGM 2023, made using MERN tech stack. I was responsible to lead the front end team to work on the main website. I contributed in making the animations, layouts, logics, and also integrating to the back end.",
+      "link": "https://find-it.id",
+      "src": "FindIT.jpg",
+      "repo": ""
+    },
+    {
       "title": "Night Login Profile Web",
       "desc": "Website I built in NL's Profile Web Contest and won 3rd place. Made using TailwindCSS and NextJS.",
       "src": "NL-Web.jpg",
