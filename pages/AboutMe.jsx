@@ -47,16 +47,16 @@ export default function AboutMe() {
         <div className="experience">
           <h1 className="">Experience</h1>
           <ExperienceItem
-            title="Web Developer"
+            title="Full Stack Web Developer"
             company="FindIT! UGM"
             date="Oct 2022 - Present"
-            description="I lead the front end team work on the main website of FindIT! UGM 2023."
+            description="I was entrusted to lead the front end team to work on the FIND IT! main website. I also work on the integration of the website with the backend."
           />
           <ExperienceItem
-            title="Web Developer"
+            title="Full Stack Web Developer"
             company="Technocorner UGM"
             date="Oct 2022 - Present"
-            description="I worked both on the front end and back end of Technocorner UGM website, but mostly on the front end side."
+            description="I worked both on the front end and back end of Technocorner UGM main website, and also entrusted to lead the EEC Website development team which uses Websockets."
           />
           <ExperienceItem
             title="IT Division Staff"
